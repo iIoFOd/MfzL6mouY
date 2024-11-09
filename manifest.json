@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "CanvasGradesPro",
+  "description": "Extension for enhancing your Canvas experience with features designed to simplify grade tracking and improve your academic performance. Dashboard grades & GPA, course page improvements, and much more!",
+  "version": "1.0.3",
+  "action": {
+    "default_icon": "logo.png",
+    "default_title": "Settings",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content_script.js"],
+      "css": ["styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": ["storage","unlimitedStorage"]
+}
